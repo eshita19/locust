@@ -13,3 +13,4 @@ https://docs.locust.io/en/stable/writing-a-locustfile.html#user-class
    - _constant_pacing_ for an adaptive time that ensures the task runs (at most) once every X seconds
 3. **weight attribute**: If more than one user class exists in the file, If you wish to simulate more users of a certain type you can set a weight attribute on those classes.
 4. **host attribute(--host)**: The host attribute is a URL prefix (i.e. “http://google.com”) to the host that is to be loaded.
+5. **Task**: Add a task for a user using @task over a method. @task takes optional arg weight, used to specify the task’s execution ratio.
