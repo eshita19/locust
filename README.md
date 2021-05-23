@@ -11,3 +11,5 @@ https://docs.locust.io/en/stable/writing-a-locustfile.html#user-class
    - _constant_ for a fixed amount of time
    - _between_ for a random time between a min and max value
    - _constant_pacing_ for an adaptive time that ensures the task runs (at most) once every X seconds
+3. **weight attribute**: If more than one user class exists in the file, If you wish to simulate more users of a certain type you can set a weight attribute on those classes.
+4.  
