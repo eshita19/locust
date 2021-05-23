@@ -14,3 +14,11 @@ https://docs.locust.io/en/stable/writing-a-locustfile.html#user-class
 3. **weight attribute**: If more than one user class exists in the file, If you wish to simulate more users of a certain type you can set a weight attribute on those classes.
 4. **host attribute(--host)**: The host attribute is a URL prefix (i.e. “http://google.com”) to the host that is to be loaded.
 5. **Task**: Add a task for a user using @task over a method. @task takes optional arg weight, used to specify the task’s execution ratio.
+6. **Running locust through command line options**:
+   1. _-f(--locustfile)_: Specify the file name to be run as locust file.
+   2. _-H(--host)_: Specify the host against which load test will run.
+   3. _-u(--users)_: Number of concurrent locust users.
+   4. _-r(--spawn-rate)_:  The rate per second in which users are spawned
+   5. _-t(--run-time)_: Stop after the specified amount of time( e.g. 300s, 20m, 3h ).  Defaults to run forever.
+   6. _--logfile_: Specify to which logs should be logged. 
+   
