@@ -16,7 +16,8 @@ https://docs.locust.io/en/stable/writing-a-locustfile.html#user-class
 5. **Task**: Add a task for a user using @task over a method. @task takes optional arg weight, used to specify the task’s execution ratio.
 6. **on_start() and on_stop()**: Methods called per user, before and after completion of task. 
 7. **test_start() and test_stop()**: Methods called during start and end of load.
-8. **Running locust through command line options**:
+8. **HTTPClient**: self.client.get(), self.client.post()
+9. **Running locust through command line options**:
    1. _-f(--locustfile)_: Specify the file name to be run as locust file.
    2. _-H(--host)_: Specify the host against which load test will run.
    3. _-u(--users)_: Number of concurrent locust users.
