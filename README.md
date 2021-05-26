@@ -28,5 +28,7 @@ https://docs.locust.io/en/stable/writing-a-locustfile.html#user-class
        - Increment the number of users not linearly but n users in duration of t time.
        - Define a class inheriting the LoadTestShape class in your locust file. In this class you define a tick() method that returns a tuple with the desired user count and spawn rate (or None to stop the test). Locust will call the tick() method approximately once per second.
        - https://docs.locust.io/en/stable/generating-custom-load-shape.html
-   9.  
+   9.  **Retrieve test statistics in csv format**:
+       - locust -f examples/basic.py --csv=example --headless -t2s --run-time 15s
+     
    
